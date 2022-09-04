@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    left: 0px;
+  
+    flex:0.2;
+ 
+}
+.right{
+    flex: 1;
+}
+ul {
+    list-style-type: none; 
+    width: 27.2%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+  }
+  li a{
+    display: block;
+    font-size: 25px;
+     color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid silver;
+  }
+  li a.active {
+    background-color:#555;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  .dropbtn { 
+    border: none;
+    outline: none;
+    border-bottom: 1px solid silver;
+    color:black;
+    padding:8px 16px;
+    font-size: 25px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .dropbtn:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  .dropdown {
+    width: 350px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    border-bottom: 1px solid silver;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;
+  
+}
+a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+ /* css for right side start from here */
+
+
+/* form css */
+.right{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+background-color: #00bbf0;
+}
+.form-box{
+  height: 300px;
+  width: 300px;
+  background-color:aliceblue;
+  border-radius: 5px;
+}
+.form-box h1{
+  text-align: center;
+  border-bottom: 1px solid silver;
+
+}
+.form-box form{
+  padding: 40px;
+  box-sizing: border-box;
+  
+}
+form .text_field{
+  border-bottom: 1px solid silver;
+}
+.text_field input{
+  width: 100%;
+  height: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+input[type="submit"]{
+  margin-top: 30px;
+  width: 100%;
+  height: 30px;
+ border: 1px solid;
+ border-radius: 25px;
+ background-color: #0ec8fb;
+ font-size: 18px;
+ color: aliceblue;
+ cursor:  pointer;
+}
+input[type="submit"]:hover{
+  background-color: #00bbf0;
+  transition: .5s;
+}
+.file{
+  margin-top: 10px;
+}
